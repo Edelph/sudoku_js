@@ -1,0 +1,102 @@
+.guetoo {
+    width: 33%;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: Forte;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: #ff7c7c underline;
+    margin-top: 1.5rem;
+    color: #ff7c7c;
+    text-shadow: #ff7c7c 0px 1px 5px;
+    font-size: xx-large;
+}
+
+.auteur {
+    font-family: Freestyle Script;
+    color: #ff7c7c;
+    ;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+input {
+    width: 70px;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    border: 1px solid #1d2e1e;
+    text-shadow: #6effe7 0px 1px 5px;
+    outline: none;
+    background: rgba(177, 245, 236, .2);
+}
+
+body {
+    background: #303a3d;
+}
+
+.body {
+    margin: 15px auto;
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+}
+
+.btn {
+    display: flex;
+    width: 15rem;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1240px) {
+    input {
+        width: 65px;
+        height: 45px;
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1315px) {
+    input {
+        width: 66px;
+        height: 45px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1242px) {
+    input {
+        width: 62px;
+        height: 45px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    input {
+        width: 55px;
+        height: 45px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1042px) {
+    input {
+        width: 48px;
+        height: 43px;
+        font-size: 30px;
+    }
+}
