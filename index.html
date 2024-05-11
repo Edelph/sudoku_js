@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="sudoku.css">
+    <link rel="stylesheet" href="phone.css">
+</head>
+
+<body>
+    <div class="divauteur">
+        <p class="auteur">réalisé par TENARIVOSON Jhon Edelph</p>
+    </div>
+    <h2>resolution d'un sudoku</h2>
+    <div class="body">
+
+        <div class="guetoo">
+            <input class="LC00 ligne0 colone0 carre1" type="number" min="1" max="9">
+            <input class="LC01 ligne0 colone1 carre1" type="number" min="1" max="9">
+            <input class="LC02 ligne0 colone2 carre1" type="number" min="1" max="9">
+
+            <input class="LC10 ligne1 colone0 carre1" type="number" min="1" max="9">
+            <input class="LC11 ligne1 colone1 carre1" type="number" min="1" max="9">
+            <input class="LC12 ligne1 colone2 carre1" type="number" min="1" max="9">
+
+            <input class="LC20 ligne2 colone0 carre1" type="number" min="1" max="9">
+            <input class="LC21 ligne2 colone1 carre1" type="number" min="1" max="9">
+            <input class="LC22 ligne2 colone2 carre1" type="number" min="1" max="9">
+        </div>
+
+        <div class="guetoo">
+            <input class="LC03 ligne0 colone3 carre2" type="number" min="1" max="9">
+            <input class="LC04 ligne0 colone4 carre2" type="number" min="1" max="9">
+            <input class="LC05 ligne0 colone5 carre2" type="number" min="1" max="9">
+
+            <input class="LC13 ligne1 colone3 carre2" type="number" min="1" max="9">
+            <input class="LC14 ligne1 colone4 carre2" type="number" min="1" max="9">
+            <input class="LC15 ligne1 colone5 carre2" type="number" min="1" max="9">
+
+            <input class="LC23 ligne2 colone3 carre2" type="number" min="1" max="9">
+            <input class="LC24 ligne2 colone4 carre2" type="number" min="1" max="9">
+            <input class="LC25 ligne2 colone5 carre2" type="number" min="1" max="9">
+        </div>
+
+        <div class="guetoo">
+            <input class="LC06 ligne0 colone6 carre3" type="number" min="1" max="9">
+            <input class="LC07 ligne0 colone7 carre3" type="number" min="1" max="9">
+            <input class="LC08 ligne0 colone8 carre3" type="number" min="1" max="9">
+
+            <input class="LC16 ligne1 colone6 carre3" type="number" min="1" max="9">
+            <input class="LC17 ligne1 colone7 carre3" type="number" min="1" max="9">
+            <input class="LC18 ligne1 colone8 carre3" type="number" min="1" max="9">
+
+            <input class="LC26 ligne2 colone6 carre3" type="number" min="1" max="9">
+            <input class="LC27 ligne2 colone7 carre3" type="number" min="1" max="9">
+            <input class="LC28 ligne2 colone8 carre3" type="number" min="1" max="9">
+        </div>
+
+        <div class="guetoo">
+            <input class="LC30 ligne3 colone0 carre4" type="number" min="1" max="9">
+            <input class="LC31 ligne3 colone1 carre4" type="number" min="1" max="9">
+            <input class="LC32 ligne3 colone2 carre4" type="number" min="1" max="9">
+
+            <input class="LC40 ligne4 colone0 carre4" type="number" min="1" max="9">
+            <input class="LC41 ligne4 colone1 carre4" type="number" min="1" max="9">
+            <input class="LC42 ligne4 colone2 carre4" type="number" min="1" max="9">
+
+            <input class="LC50 ligne5 colone0 carre4" type="number" min="1" max="9">
+            <input class="LC51 ligne5 colone1 carre4" type="number" min="1" max="9">
+            <input class="LC52 ligne5 colone2 carre4" type="number" min="1" max="9">
+        </div>
+
+        <div class="guetoo">
+            <input class="LC33 ligne3 colone3 carre5" type="number" min="1" max="9">
+            <input class="LC34 ligne3 colone4 carre5" type="number" min="1" max="9">
+            <input class="LC35 ligne3 colone5 carre5" type="number" min="1" max="9">
+
+            <input class="LC43 ligne4 colone3 carre5" type="number" min="1" max="9">
+            <input class="LC44 ligne4 colone4 carre5" type="number" min="1" max="9">
+            <input class="LC45 ligne4 colone5 carre5" type="number" min="1" max="9">
+
+            <input class="LC53 ligne5 colone3 carre5" type="number" min="1" max="9">
+            <input class="LC54 ligne5 colone4 carre5" type="number" min="1" max="9">
+            <input class="LC55 ligne5 colone5 carre5" type="number" min="1" max="9">
+        </div>
+
+        <div class="guetoo">
+            <input class="LC36 ligne3 colone6 carre6" type="number" min="1" max="9">
+            <input class="LC37 ligne3 colone7 carre6" type="number" min="1" max="9">
+            <input class="LC38 ligne3 colone8 carre6" type="number" min="1" max="9">
+
+            <input class="LC46 ligne4 colone6 carre6" type="number" min="1" max="9">
+            <input class="LC47 ligne4 colone7 carre6" type="number" min="1" max="9">
+            <input class="LC48 ligne4 colone8 carre6" type="number" min="1" max="9">
+
+            <input class="LC56 ligne5 colone6 carre6" type="number" min="1" max="9">
+            <input class="LC57 ligne5 colone7 carre6" type="number" min="1" max="9">
+            <input class="LC58 ligne5 colone8 carre6" type="number" min="1" max="9">
+        </div>
+
+        <div class="guetoo">
+            <input class="LC60 ligne6 colone0 carre7" type="number" min="1" max="9">
+            <input class="LC61 ligne6 colone1 carre7" type="number" min="1" max="9">
+            <input class="LC62 ligne6 colone2 carre7" type="number" min="1" max="9">
+
+            <input class="LC70 ligne7 colone0 carre7" type="number" min="1" max="9">
+            <input class="LC71 ligne7 colone1 carre7" type="number" min="1" max="9">
+            <input class="LC72 ligne7 colone2 carre7" type="number" min="1" max="9">
+
+            <input class="LC80 ligne8 colone0 carre7" type="number" min="1" max="9">
+            <input class="LC81 ligne8 colone1 carre7" type="number" min="1" max="9">
+            <input class="LC82 ligne8 colone2 carre7" type="number" min="1" max="9">
+        </div>
+
+        <div class="guetoo">
+            <input class="LC63 ligne6 colone3 carre8" type="number" min="1" max="9">
+            <input class="LC64 ligne6 colone4 carre8" type="number" min="1" max="9">
+            <input class="LC65 ligne6 colone5 carre8" type="number" min="1" max="9">
+
+            <input class="LC73 ligne7 colone3 carre8" type="number" min="1" max="9">
+            <input class="LC74 ligne7 colone4 carre8" type="number" min="1" max="9">
+            <input class="LC75 ligne7 colone5 carre8" type="number" min="1" max="9">
+
+            <input class="LC83 ligne8 colone3 carre8" type="number" min="1" max="9">
+            <input class="LC84 ligne8 colone4 carre8" type="number" min="1" max="9">
+            <input class="LC85 ligne8 colone5 carre8" type="number" min="1" max="9">
+        </div>
+
+        <div class="guetoo">
+            <input class="LC66 ligne6 colone6 carre9" type="number" min="1" max="9">
+            <input class="LC67 ligne6 colone7 carre9" type="number" min="1" max="9">
+            <input class="LC68 ligne6 colone8 carre9" type="number" min="1" max="9">
+
+            <input class="LC76 ligne7 colone6 carre9" type="number" min="1" max="9">
+            <input class="LC77 ligne7 colone7 carre9" type="number" min="1" max="9">
+            <input class="LC78 ligne7 colone8 carre9" type="number" min="1" max="9">
+
+            <input class="LC86 ligne8 colone6 carre9" type="number" min="1" max="9">
+            <input class="LC87 ligne8 colone7 carre9" type="number" min="1" max="9">
+            <input class="LC88 ligne8 colone8 carre9" type="number" min="1" max="9">
+        </div>
+    </div>
+    <div class="btn">
+        <a type="reset" id="reset">reset</a>
+        <a type="submit" id="submit">solution</a>
+    </div>
+    <script src="sudoku.js"></script>
+</body>
+
+</html>
